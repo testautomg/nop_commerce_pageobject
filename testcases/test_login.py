@@ -17,7 +17,7 @@ class Test_NopCommerce:
         lp = Login(self.driver)
         db = Dashboard(self.driver)
         lp.perform_login(usn, pwd)
-        db.validate_title("Dashboar")
+        db.validate_title("Dashboard")
         try:
             assert title == self.validate_title().text, "Title not matching"
         except:
