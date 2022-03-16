@@ -19,4 +19,7 @@ class Dashboard(Base_page):
     def validate_title(self, title):
         self.scroll_by_pixel()
         time.sleep(3)
-        assert self.get_title() == title
+        try:
+            assert title == self.validate_title().text, "Title not matching"
+        except Exception as e:
+            self.log.info("Title not matching")

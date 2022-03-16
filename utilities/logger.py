@@ -12,7 +12,7 @@ def custom_logger(loglevel=logging.DEBUG):
     logger.setLevel(loglevel)
 
     curr_time = time.strftime("%m_%d_%Y_%H:%M:%S").replace(":", "_")
-    log_file_name = '/Users/admin/Desktop/SDET1/sdet1_nop_commerce_pageobject/logs/log' + curr_time + '.log'
+    log_file_name = './logs/log' + curr_time + '.log'
     fh = logging.FileHandler(log_file_name)
 
     # Create a formatter
