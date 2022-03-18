@@ -18,3 +18,5 @@ class Test_NopCommerce:
         db = Dashboard(self.driver)
         lp.perform_login(usn, pwd)
         db.validate_title("Dashboard")
+
+        # Added something from SDET1
