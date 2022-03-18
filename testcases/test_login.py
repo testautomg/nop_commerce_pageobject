@@ -20,3 +20,4 @@ class Test_NopCommerce:
         db.validate_title("Dashboard")
 
         # Added something from SDET1
+        # added something to branch2
